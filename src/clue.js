@@ -31,6 +31,24 @@ const suspectsArray = [
     color: "purple"
   },
   {
+    firstName: "Kasandra",
+  lastName: "Scarlet",
+  occupation: "Actor",
+  age: 31,
+  description: "She is an A-list movie star with a dark past",
+  image: "https://www.radiotimes.com/uploads/images/Original/111967.jpg",
+  color: "red"
+  },
+  {
+    firstName: "Eleanor",
+  lastName: "Peacock",
+  occupation: "Socialité",
+  age: 36,
+  description: "She is from a wealthy family and uses her status and money to earn popularity",
+  image: "https://metrouk2.files.wordpress.com/2016/07/mrs-peacock.jpg",
+  color: "blue"
+  },
+  {
     firstName: "Jack",
     lastName: "Mustard",
     occupation:" Retired Football player",
@@ -93,7 +111,9 @@ function pickMystery() {
 
 // ITERATION 3
 
-function revealMystery() {}
+function revealMystery(envelope) {
+  return `${envelope.suspect.firstName} ${envelope.suspect.lastName} killed Mr. Boddy using the ${envelope.weapon.name} in the ${envelope.room.name}!`
+}
 
 
 
